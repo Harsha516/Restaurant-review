@@ -18,13 +18,16 @@
     </nav>
   </header>
 
-  <main id="maincontent">
+  <main id="maincontent" aria-label="list" role="application">
     <section id="map-container">
       <div id="map" role="application" aria-label="location"></div>
     </section>
     <section>
-      <div class="filter-options">
-        <h2>Filter Results</h2><label for="neighborhood-select">n</label> <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+      <div class="filter-options" aria-label="filter-options" tabindex="0">
+        <h2>Filter Results</h2>
+        <label for="neighborhood-select" > 
+        <select id="neighborhoods-select" name="neighborhoods" onchange="updateRestaurants()">
+          </label>
           <option value="all">
             All Neighborhoods
           </option>
